@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Match Centre — Football Chronicle</title><link rel="stylesheet" href="style.css">
+</head>
+<body class="hubbody">
+<div class="ticker"><span>LIVE DESK</span> Football Chronicle Match Centre <b>•</b> Search matches, teams, players and tactics</div>
+<header class="hubhead"><div class="logo">FOOTBALL <i>CHRONICLE</i></div><div class="sub">MATCH CENTRE · NEWSROOM · ANALYSIS</div></header>
+<nav><a href="index.html">HOME</a><a class="active" href="news.html">MATCH CENTRE</a><a href="#news">NEWS</a><a href="#rankings">RANKINGS</a><a href="#tactics">TACTICS</a><a href="#transfers">TRANSFERS</a></nav>
+<main>
+<section class="dashboard">
+ <div><label>THE FOOTBALL DESK</label><h1>Everything Football.<br><em>One newsroom.</em></h1><p>Search the football world, check match information, explore rankings and break down tactics.</p></div>
+ <div class="search"><input id="q" oninput="searchAll()" placeholder="Search Barcelona, Arsenal, Mbappé, Champions League..."><button onclick="searchAll()">SEARCH</button><div id="results"></div></div>
+</section>
+
+<section class="section" id="matches"><div class="sectitle"><h2>⚡ Match Centre</h2><span>DEMO LIVE BOARD</span></div><div class="matchgrid" id="matchesBox"></div></section>
+
+<section class="section" id="news"><div class="sectitle"><h2>Latest Football News</h2><span>THE NEWSROOM</span></div><div class="newsgrid">
+<article class="newsbig"><div class="newsimage">🏟️</div><label>FEATURE</label><h3>The stadium is ready. The story begins now.</h3><p>Football is built on preparation, pressure and the moments that decide a match.</p></article>
+<article><label>TACTICS</label><h3>Why pressing changes the rhythm of a game</h3><p>Winning the ball high can turn defence into attack in seconds.</p></article>
+<article><label>PLAYERS</label><h3>The modern footballer</h3><p>Today's top players must read space, make decisions and adapt constantly.</p></article>
+<article><label>TRANSFERS</label><h3>Transfer window watch</h3><p>Follow rumours, confirmed moves and squad changes.</p></article>
+</div></section>
+
+<section class="section" id="rankings"><div class="sectitle"><h2>Player Rankings</h2><span>EDITOR'S BOARD</span></div>
+<div class="rankgrid">
+<div class="rankhero"><small>PLAYER OF THE EDITION</small><strong>#1</strong><h3>THE COMPLETE FORWARD</h3><p>Goals · Movement · Creativity · Big-game impact</p></div>
+<table><thead><tr><th>#</th><th>PLAYER</th><th>POSITION</th><th>RATING</th></tr></thead><tbody>
+<tr><td>01</td><td>Elite Forward</td><td>FW</td><td>9.2</td></tr><tr><td>02</td><td>Creative Midfielder</td><td>MF</td><td>8.9</td></tr><tr><td>03</td><td>Complete Defender</td><td>DF</td><td>8.7</td></tr><tr><td>04</td><td>Shot Stopper</td><td>GK</td><td>8.5</td></tr>
+</tbody></table></div></section>
+
+<section class="section tacticSection" id="tactics"><div class="sectitle"><h2>🧠 Tactical Desk</h2><span>INTERACTIVE</span></div>
+<div class="tacticwrap"><div class="tactictext"><h3 id="formationTitle">4–3–3</h3><p id="formationText">A balanced system that creates width with wingers and uses three midfielders to control central areas.</p><button onclick="setFormation('4–3–3','A balanced system that creates width with wingers and uses three midfielders to control central areas.')">4–3–3</button><button onclick="setFormation('4–4–2','A classic shape with two forwards, compact lines and clear defensive responsibilities.')">4–4–2</button><button onclick="setFormation('3–5–2','Three centre-backs support a midfield five while wing-backs provide width.')">3–5–2</button></div>
+<div class="pitch"><div class="goal top"></div><span class="p p1">●</span><span class="p p2">●</span><span class="p p3">●</span><span class="p p4">●</span><span class="p p5">●</span><span class="p p6">●</span><span class="p p7">●</span><span class="p p8">●</span><span class="p p9">●</span><span class="p p10">●</span><span class="p p11">●</span><div class="half"></div><div class="goal bottom"></div></div></div></section>
+
+<section class="section" id="transfers"><div class="sectitle"><h2>🔄 Transfer Desk</h2><span>RUMOURS & MOVES</span></div><div class="transferlist"><div><b>CONFIRMED</b><span>Player movement</span><small>Squad update</small></div><div><b>WATCH</b><span>Big-name rumour</span><small>Developing story</small></div><div><b>INSIDE</b><span>Club planning</span><small>Transfer analysis</small></div></div></section>
+</main>
+<footer><strong>FOOTBALL CHRONICLE</strong><span>Made by Navraj Singh · Demo newsroom</span></footer>
+<script src="script.js"></script>
+</body></html>
